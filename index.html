@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <!-- 👇 css code file 👇 -->
+    <link rel="stylesheet" href="./src/style/global.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <header class="headbar">
+        <h1 class="headbar_title">Bookshelf</h1>
+    </header>
+    <main>
+        <section class="container">
+        <section class="input_section">
+            <h2>Add New Book</h2>
+            <form id="inputBook">
+                <div class="input">
+                    <label for="bookTitle">Title</label>
+                    <input name="bookTitle" id="bookTitle" type="text" required
+                    placeholder="ex: Insecurity my middle name">
+                </div>
+                <div class="input">
+                    <label for="bookAuthor">Author</label>
+                    <input name="bookAuthor" id="bookAuthor" type="text" required
+                    placeholder="ex: Alvi Syahrin">
+                </div>
+                <div class="input">
+                    <label for="bookYear">Year</label>
+                    <input name="bookYear" id="bookYear" type="number" required 
+                    placeholder="ex: 2022">
+                </div>
+                <div class="input_inline">
+                    <input name="bookIsComplete" id="bookIsComplete" type="checkbox">
+                    <label for="bookIsComplete">Read</label>
+                </div>
+                <button class="bookSubmit" id="bookSubmit" type="submit">Add to <span>unread bookshelf</span></button>
+                </form>
+            </section>
+            <section class="headbar_image">
+                    <img class="image1" src="./src/assets/bookshelf.svg" alt="">
+                </section>
+            </section>
+            <section class="search section">
+                <div class="search-box">
+                    <input id="searchbook" class="search-txt" type="text" name="" placeholder="Cari Buku...">
+                    <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div class="row">
+                    <h2>Belum Selesai Dibaca</h2>
+                    <div class="list-book" id="uncompleted">
+
+                    </div>
+                </div>
+                <div class="row" >
+                    <h2>Selesai Dibaca</h2>
+                    <div class="list-book" id="completed">
+                    </div>
+                </div>
+            </section>
+        </main>>
+        <footer>
+        <p>Copyright &#169; 2023 by <a href="https://www.linkedin.com/in/sabrina-natasya-bilbina/" target="_blank">sabrina natasya bilbina</a></p>
+    </footer>
+</body>
+<!-- 👇 javascript code file 👇 -->
+<script src="./src/js/index.js"></script>
+</html>
